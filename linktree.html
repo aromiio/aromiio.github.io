@@ -56,6 +56,14 @@
     .top-section {
       border-radius: 20px;
       overflow: hidden;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .top-section:hover {
+      text-decoration: none;
+      color: inherit;
     }
 
     .photo-grid {
@@ -68,7 +76,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
-    } 
+    }
 
     .link-section {
       position: relative;
@@ -77,6 +85,19 @@
       justify-content: center;
       background-color: white;
       border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .link-section.with-photo {
+      justify-content: center;
+    }
+
+    .link-section:hover {
+      text-decoration: none;
+      color: inherit;
+      background-color: #f0e9e9;
     }
 
     .link-title {
@@ -94,10 +115,6 @@
       font-size: 12px;
     }
 
-    .link-section.with-photo {
-      justify-content: center;
-    }
-
     .photo-link {
       width: 40px;
       height: 40px;
@@ -107,14 +124,18 @@
       left: 8px;
     }
 
-    .social{
+    .social {
       width: 23px;
       height: 23px;
       object-fit: contain;
     }
-    
-    .footer{
+
+    .footer {
       font-size: 8px;
+    }
+
+    .footer a{
+      color: black
     }
   </style>
 
@@ -128,16 +149,16 @@
       <div class="header">
 
         <div class="top_icon d-flex justify-content-between align-items-center">
-          <div class="icon shadow">
+          <a href="#" class="icon shadow">
             <img src="assets/img/linktree/linktree_icon.png" alt="linktree">
-          </div>
-          <div class="icon shadow">
+          </a>
+          <a href="#" class="icon shadow">
             <img src="assets/img/linktree/share_icon.png" alt="share">
-          </div>
+          </a>
         </div>
 
         <div class="profile text-center p-3">
-          <img src="assets/img/linktree/amuse.png" class="logo">
+          <a href="https://linktr.ee/amusemakeup"><img src="assets/img/linktree/amuse.png" class="logo"></a>
           <h6>@amuse_official</h6>
         </div>
 
@@ -145,7 +166,7 @@
 
 
       <!--TOP LINKS-->
-      <div class="top-section bg-white p-2 shadow-sm">
+      <a href="#" class="top-section bg-white p-2 shadow-sm">
 
         <!-- Grid Image -->
         <div class="photo-grid">
@@ -183,43 +204,43 @@
           <p class="link-title mb-0">IN 올리브영 / 어뮤즈 X 몬치치</p>
           <span class="dot-menu"><b>⋮</b></span>
         </div>
-      </div>
+      </a>
 
 
       <!--5 SECTION LINKS-->
       <div class="links mt-3">
         <p class="link-title mt-3"><b>AMUSE WELLNESS</b></p>
-        <div class="link-section p-3 shadow-sm">
+        <a href="#" class="link-section p-3 shadow-sm">
           <p class="link-title mb-0">AMUSE WELLNESS 💙</p>
           <span class="dot-menu"><b>⋮</b></span>
-        </div>
+        </a>
 
         <p class="link-title mt-3"><b>STOCKIST</b></p>
 
-        <div class="link-section p-3 shadow-sm">
+        <a href="#" class="link-section p-3 shadow-sm">
           <p class="link-title mb-0">[TIKTOK] AMUSE TikTok SHOP OPEN! 💖</p>
           <span class="dot-menu"><b>⋮</b></span>
-        </div>
+        </a>
 
-        <div class="link-section with-photo p-3 mt-3 shadow-sm">
+        <a href="#" class="link-section with-photo p-3 mt-3 shadow-sm">
           <img src="assets/img/linktree/amuse.png" class="photo-link">
           <p class="link-title mb-0">AMUSE GLOBAL CHANNEL</p>
           <span class="dot-menu"><b>⋮</b></span>
-        </div>
+        </a>
 
-        <div class="link-section with-photo p-3 mt-3 shadow-sm">
+        <a href="#" class="link-section with-photo p-3 mt-3 shadow-sm">
           <img src="assets/img/linktree/amuse.png" class="photo-link">
           <p class="link-title mb-0">AMUSE GLOBAL Shipping Website ✈️</p>
           <span class="dot-menu"><b>⋮</b></span>
-        </div>
+        </a>
 
         <p class="link-title mt-3"><b>and more...</b></p>
 
-        <div class="link-section with-photo p-3 mt-3 shadow-sm">
+        <a href="#" class="link-section with-photo p-3 mt-3 shadow-sm">
           <img src="assets/img/linktree/wonyoung1.jpg" class="photo-link">
           <p class="link-title mb-0">🎵 AMUSE Christmas Playlist - playlist by AMUSE</p>
           <span class="dot-menu"><b>⋮</b></span>
-        </div>
+        </a>
 
       </div>
 
@@ -227,12 +248,15 @@
       <!--BOTTOM-->
       <div class="bottom text-center mt-4">
         <div class="d-flex justify-content-center align-items-center">
-          <img src="assets/img/linktree/insta_logo.png" class="social mx-2">
-          <img src="assets/img/linktree/tiktok_logo.png" class="social mx-2">
-          <img src="assets/img/linktree/x_logo.png" class="social mx-2">
+          <a href="#"><img src="assets/img/linktree/insta_logo.png" class="social mx-2"></a>
+          <a href="#"><img src="assets/img/linktree/tiktok_logo.png" class="social mx-2"></a>
+          <a href="#"><img src="assets/img/linktree/x_logo.png" class="social mx-2"></a>
         </div>
         <div class="footer mt-5">
-          Cookie Preferences · Report · Privacy · Explore
+          <a href="#">Cookie Preferences</a> ·
+          <a href="#">Report</a> ·
+          <a href="#">Privacy</a> ·
+          <a href="#">Explore</a>
         </div>
       </div>
 
